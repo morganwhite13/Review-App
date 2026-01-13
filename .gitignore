@@ -1,0 +1,81 @@
+# Xcode
+#
+# gitignore contributors: remember to update the values below
+#
+## Xcode 5
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.playground
+## Xcode 6
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+
+## Xcode personal settings
+*.perspectivev3
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Carthage
+Carthage/Build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+.build/
+.swiftpm/
+*.xcodeproj/
+*.playground
+
+# Bundler
+.bundle/
+vendor/Gems.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Simulator
+.iphonesimulator/
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+
+# Misc
+*.log
+*.swiftmodule
