@@ -366,20 +366,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🤝 Contributing
-
-This is a school project portfolio piece, but I appreciate feedback and suggestions!
-
-If you have ideas for improvements or spot any issues:
-
-1. Open an [Issue](https://github.com/yourusername/morgans-reviews/issues)
-2. Fork and create a feature branch
-3. Submit a Pull Request with clear descriptions
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
 ## 📞 Contact & Support
 
 - **Portfolio:** [your-website.com](https://morganwhite13.github.io/)
