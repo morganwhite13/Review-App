@@ -1,6 +1,6 @@
 # Morgan's Reviews - iOS Entertainment Review App
 
-A native iOS review application built in Swift that allows reviewers to create, edit, and publish spoiler-free reviews of movies, TV shows, games, and other entertainment. Users can browse reviews with star ratings, images, and detailed commentary, while the reviewer maintains editorial control through a secure sign-in system.
+A native iOS review application built in Swift that allows reviewers to create, edit, and publish spoiler-free reviews of movies, TV shows, games, and other entertainment. Users can browse reviews with star ratings, images, and detailed commentary, while the reviewer maintains editorial control through a simple sign-in gate (hard-coded demo credentials, not real authentication).
 
 **[Live Demo Video](https://www.youtube.com/watch?v=sYmV_4kQiN8)**
 
@@ -22,7 +22,7 @@ The app ships with 7 pre-loaded sample reviews across multiple entertainment cat
 ### 📝 Review Management
 - **Create** new reviews with title, body text, and images
 - **Edit** existing reviews while maintaining data integrity
-- **Delete** reviews through secure authentication
+- **Delete** reviews after passing the reviewer sign-in gate
 - Real-time save button state management
 - Text field validation (title and review text required)
 
@@ -36,7 +36,7 @@ The app ships with 7 pre-loaded sample reviews across multiple entertainment cat
 ### 🔐 Dual Authentication System
 - **SigninViewController**: Authentication for new reviews
 - **SigninUserViewController**: Authentication for editing existing reviews
-- Simple credential validation (username: "good", password: "app")
+- Simple client-side credential check against hard-coded demo values (username: "good", password: "app"); this is a demo gate, not real authentication
 - Maintains review context through navigation chains
 
 ### 📸 Rich Media Support
@@ -125,8 +125,8 @@ ReviewTableViewController (Main List)
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/morgans-reviews.git
-   cd morgans-reviews
+   git clone https://github.com/morganwhite13/Review-App.git
+   cd Review-App
    ```
 
 2. **Open in Xcode:**
@@ -144,6 +144,11 @@ To access the review creation and editing interface:
 
 - **Username:** `good`
 - **Password:** `app`
+
+### Known Issues
+
+- The Xcode project file (`morgansreview.xcodeproj`), `Info.plist` and the asset catalog are not committed to this repository (the `.gitignore` previously excluded the project; that rule is now fixed), so the app cannot be built from a fresh clone until they are added back.
+- Reviews are kept in memory only and reset when the app is relaunched.
 
 ---
 
@@ -338,15 +343,15 @@ If extended today, the following improvements would be valuable:
 | File | Lines | Purpose |
 |------|-------|---------|
 | `Review.swift` | 30 | Core data model with validation |
-| `RatingControl.swift` | 130 | Custom star rating component |
-| `ReviewTableViewCell.swift` | 25 | Table cell for review list |
-| `ReviewTableViewController.swift` | 140 | Main list view controller |
-| `ReviewUserrViewController.swift` | 50 | Read-only review detail view |
-| `ReviewViewController.swift` | 140 | Edit/create review interface |
-| `SigninViewController.swift` | 45 | Authentication for new reviews |
+| `RatingControl.swift` | 107 | Custom star rating component |
+| `ReviewTableViewCell.swift` | 27 | Table cell for review list |
+| `ReviewTableViewController.swift` | 129 | Main list view controller |
+| `ReviewUserrViewController.swift` | 48 | Read-only review detail view |
+| `ReviewViewController.swift` | 135 | Edit/create review interface |
+| `SigninViewController.swift` | 41 | Authentication for new reviews |
 | `SigninUserViewController.swift` | 50 | Authentication for editing |
-| `AppDelegate.swift` | 40 | Application lifecycle |
-| **Total** | **600+** | Complete application |
+| `AppDelegate.swift` | 46 | Application lifecycle |
+| **Total** | **613** | Complete application |
 
 ---
 
