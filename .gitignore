@@ -45,7 +45,6 @@ Podfile.lock
 # Swift Package Manager
 .build/
 .swiftpm/
-*.xcodeproj/
 *.playground
 
 # Bundler

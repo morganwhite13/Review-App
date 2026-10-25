@@ -36,8 +36,6 @@ class SigninViewController: UIViewController, UITextFieldDelegate {
     }
     //checks if the username and password have been enetered correctly
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if userusername.text==username&&userpassword.text==password{
-            done.isEnabled=true
-        }
+        done.isEnabled = (userusername.text == username && userpassword.text == password)
     }
 }
