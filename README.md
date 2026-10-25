@@ -338,15 +338,15 @@ If extended today, the following improvements would be valuable:
 | File | Lines | Purpose |
 |------|-------|---------|
 | `Review.swift` | 30 | Core data model with validation |
-| `RatingControl.swift` | 130 | Custom star rating component |
-| `ReviewTableViewCell.swift` | 25 | Table cell for review list |
-| `ReviewTableViewController.swift` | 140 | Main list view controller |
-| `ReviewUserrViewController.swift` | 50 | Read-only review detail view |
-| `ReviewViewController.swift` | 140 | Edit/create review interface |
-| `SigninViewController.swift` | 45 | Authentication for new reviews |
-| `SigninUserViewController.swift` | 50 | Authentication for editing |
-| `AppDelegate.swift` | 40 | Application lifecycle |
-| **Total** | **600+** | Complete application |
+| `RatingControl.swift` | 107 | Custom star rating component |
+| `ReviewTableViewCell.swift` | 27 | Table cell for review list |
+| `ReviewTableViewController.swift` | 129 | Main list view controller |
+| `ReviewUserrViewController.swift` | 48 | Read-only review detail view |
+| `ReviewViewController.swift` | 135 | Edit/create review interface |
+| `SigninViewController.swift` | 43 | Authentication for new reviews |
+| `SigninUserViewController.swift` | 52 | Authentication for editing |
+| `AppDelegate.swift` | 46 | Application lifecycle |
+| **Total** | **617** | Complete application |
 
 ---
 
